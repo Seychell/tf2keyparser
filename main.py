@@ -8,7 +8,7 @@ from cookie import TOKEN_ID, CHAT_ID
 
 TOKEN = TOKEN_ID  # Вставьте свой токен
 
-ALLOWED_USERS = ['358386377', '388345168'] # Вставьте список разрешенных пользователей
+ALLOWED_USERS = [CHAT_ID] # Вставьте список разрешенных пользователей
 
 bot = telebot.TeleBot(TOKEN)
 
