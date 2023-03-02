@@ -4,9 +4,10 @@ import telegram
 import asyncio
 import requests
 from bs4 import BeautifulSoup
+from cookie import CHAT_ID, TOKEN_ID
 
-bot = telegram.Bot(token='TOKEN_ID')
-chat_ids = ['CHAT_ID', 'CHAT_ID']
+bot = telegram.Bot(token=TOKEN_ID)
+chat_ids = CHAT_ID
 
 async def send_prices():
     url_tf2lavka = 'https://tf2lavka.ru/'

@@ -1,2 +1,3 @@
 venv/
-cookie.txt
+cookie.py
+__pycache__/
