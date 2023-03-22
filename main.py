@@ -13,8 +13,7 @@ ALLOWED_USERS = CHAT_ID # Вставьте список разрешенных �
 bot = telebot.TeleBot(TOKEN)
 
 for user in ALLOWED_USERS:
-    for user in ALLOWED_USERS:
-        bot.send_message(int(user), "The bot is working!")
+    bot.send_message(int(user), "The bot is working!")
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
