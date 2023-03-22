@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import time
-from cookie import TOKEN_ID, CHAT_ID
+from cookie import TOKEN_ID, CHAT_ID, OWNER_ID
 
 
 TOKEN = TOKEN_ID  # Вставьте свой токен
@@ -11,6 +11,10 @@ TOKEN = TOKEN_ID  # Вставьте свой токен
 ALLOWED_USERS = CHAT_ID # Вставьте список разрешенных пользователей
 
 bot = telebot.TeleBot(TOKEN)
+
+for user in ALLOWED_USERS:
+    for user in ALLOWED_USERS:
+        bot.send_message(int(user), "The bot is working!")
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
